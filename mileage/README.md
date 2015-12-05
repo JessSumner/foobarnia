@@ -12,19 +12,20 @@ file, and suddenly they are getting a "weird error" whenever they search for
 the color 'Teal'. Other colors like 'Puce' seem fine. But the Elbonian
 Ministers are panicking because Teal is the national color.
 
-They've kindly asked you (and offered a handsome reward) to debug and fix this
-script so it once again returns the median mileage for Teal cars.
+They've kindly asked you to debug and fix this script so it once again returns 
+the median mileage for Teal cars.
 
 You'll notice that the contractor wrote some tests, although not many, and some
 code is not tested.
 
 First, you'll want to fix the bug and add a test to cover the fix.
 
-Also, the Elbonians would like to add a couple features:
-1) a way to filter by a price range
-2) a way to filter by fuel type
+Then, the Elbonians would like you to add a couple features:
 
-Also worth thinking about (don't need to actually do it):
+  1. a way to filter by a price range
+  2. a way to filter by fuel type
+
+##### Also worth thinking about (don't need to actually do it):
 
 Are there any other tests that should be added? Are there other ways the code
 could be improved? How would you advise the Elbonians on better ways to look at
