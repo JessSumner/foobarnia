@@ -1,7 +1,7 @@
 require 'csv'
 require './auto_seeker'
 
-data = CSV.read('elbonian_autos.csv')
+data = CSV.read('foobarnian_autos.csv')
 
 seeker = AutoSeeker.new data
 autos = seeker.filter(:color, ARGV[0])

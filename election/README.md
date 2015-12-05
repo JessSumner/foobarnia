@@ -1,8 +1,8 @@
 # It's Election Season!
 
-The Elbonian Ministry of Elections has asked us to tally all the votes for the
+The Foobarnian Ministry of Elections has asked us to tally all the votes for the
 next Presidental Election. Fortunately, the requirements are very simple since
-the Elbonians are highly organized. We only need to write one function in
+the Foobarnians are highly organized. We only need to write one function in
 JavaScript.
 
 The candidates are identified by positive integers, and the votes will be
@@ -41,7 +41,7 @@ your code.
 #### Performance Considerations
 
 Once the tests are passing, consider this done. But, keep in mind, the tests
-involve only a small sample of votes. In reality, the Republic of Elbonia has a
+involve only a small sample of votes. In reality, the Republic of Foobarnia has a
 huge population - **9007199254740992** to be exact - and *everyone* votes.
 Furthermore, anyone can run for president simply by sending a postcard to the
 election office, so there are typically *several thousand* candidates. How will
