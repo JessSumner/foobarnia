@@ -12,6 +12,12 @@ class AutoSeeker
     end
   end
 
+  def filter_price min, max
+    @autos = autos.select do |auto|
+      auto.price.between?(min, max)
+    end
+  end
+
   def autos
     @autos ||= @data.map do |row|
       Auto.new(row)
@@ -19,7 +25,7 @@ class AutoSeeker
   end
 
   def self.median_mileage autos
-    prices = autos.collect(&:mileage).sort
-    (prices[(prices.length - 1) / 2].to_f + prices[prices.length / 2].to_f) / 2.0
+    mileages = autos.collect(&:mileage).compact.sort
+    (mileages[(mileages.length - 1) / 2].to_f + mileages[mileages.length / 2].to_f) / 2.0
   end
 end
