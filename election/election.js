@@ -24,7 +24,13 @@ exports.tally = function(votes) {
       return [result[0].vote]
     };
     if (votes.length === 0) {
-      return result.splice(0, 3).
+      var thirdPlace = result[2].count;
+      var index = 3;
+      while (index < result.length && result[index].count === thirdPlace) {
+        index ++;
+      }
+
+      return result.splice(0, index).
         map(function(candidate) { return candidate.vote }).sort();
     }
     var vote = votes.shift();
